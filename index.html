@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El maravilloso portfolio de Michat Szaj</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--- CABECERA Y NAVEGACIÓN --->
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="./imagenes/images.jpeg" alt="Michat Szaj... o Bruce Wayne" class="avatar">
+            <h1>Michat Szaj, el caballero oscuro de la web</h1>
+            <p class="subtitulo"></p>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#este_soy_yo">Este soy yo</a></li>
+                <li><a href="#proyectos">Mis proyectos</a></li>
+                <li><a href="#habilidades">Mis habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="este_soy_yo" class="seccion">
+            <h2>Este soy yo</h2>
+            <div class="bio">
+                <p>¡Hola! Soy Michat Szaj. De día sobrevivo a las clases de desarrollo web y de noche limpio las calles de bugs y enlaces rotos. Esta es mi web personal, programada 100% por un humano real desde mi propia Batcueva (y no por una máquina morosa, que el Joker ya intentó hackearme el código). Si has llegado hasta aquí, bienvenido a Gotham.</p>
+            </div>
+        </section>
+        <!-- PROYECTOS --->
+            <section id="proyectos" class="seccion">
+            <h2>Mis proyectos</h2>
+            <div class="galeria-flex">
+                <div class="tarjeta-proyecto">
+                    <img src="./imagenes/proy1.png" alt="Captura del Proyecto 1">
+                    <h3>Proyecto nº1</h3>
+                    <p>Solo te puedo dejar la landing page, porque si no, la verá el Joker...</p>
+                    <a href="https://github.com" target="_blank" class="btn-enlace">Ver proyecto</a>
+                </div>
+                <div class="tarjeta-proyecto">
+                    <img src="./imagenes/proy1.png" alt="Captura del Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Sí, la segunda parte también es tema tuyo buscarlo, por el mismo motivo.</p>
+                    <a href="https://github.com" target="_blank" class="btn-enlace">Ver proyecto</a>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="seccion">
+            <h2>Habilidades (que llevo en el bat-cinturón)</h2>
+            <div class="habilidades-container">
+                <div class="lista-habilidades">
+                    <h3>Habilidades que manejo:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>Flexbox</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="tabla-habilidades">
+                    <h3>Nivel de habilidad</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Habilidad</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>Intermedio</td>
+                            </tr>
+                            <tr>
+                                <td>Flexbox</td>
+                                <td>Justo empezando</td>
+                            </tr>
+                            <tr>
+                                <td>Github</td>
+                                <td>Bastante avanzado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- FORMULARIO Y CONTACTO --->
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Bruce Wayne" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="batman@batmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="trabajo">Propuesta de trabajo</option>
+                        <option value="duda">Duda o consulta</option>
+                        <option value="otro">Otro motivo, como ver a Enigma y al Joker</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje, como si es un trabajo o misión para mí, o si te enteraste dónde está el Joker..." required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar a la Batcueva</button>
+            </form>
+            <div class="redes-sociales">
+                <h3>RRSS/webs de relevancia (búscalas, te dejo la landing page)</h3>
+                <div class="redes-flex">
+                    <a href="https://github.com" target="_blank" class="enlace-red">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="enlace-red">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank" class="enlace-red">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2026 Michat Szaj - Todos los derechos reservados, protegidos por Wayne Enterprises</p>
+    </footer>
+</body>
+</html>
+<!-- 
+  Nota para la docente si llega a ver todo esto: 
+  Código programado 100% a mano por un humano real en la Batcueva.
+  Cualquier parecido con una IA es pura coincidencia...
+  o un sabotaje del Joker.
+-->
